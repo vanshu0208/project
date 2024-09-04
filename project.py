@@ -24,11 +24,12 @@ if len(x)==4:
             st.balloons()
             z+=1
             if z==2:
-                st.write('Here are the documents you need to deposit: ')
-                list = ['Aadhar-card', 'Pan-Card', 'Salary-slip','Bank aaount details']
-                st.markdown(list)
-                st.write('Pay EMI on time 😡')
-                st.write('Thanks for your visit')
+                d=st.button('Show documents')
+                if d==1;
+                    st.header('**Here are the documents you need to deposit**: ')
+                    st.markdown("Here's a list of documents: ")
+                    st.write('Pay EMI on time 😡')
+                    st.write('red[Thanks for your visit]')
 
 elif len(x)==0:
     st.write('')
