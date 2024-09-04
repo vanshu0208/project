@@ -26,8 +26,8 @@ if len(x)==4:
             if z==2:
                 st.write('Pay EMI on time 😡')
                 st.write('Thanks for your visit')
-            else:
-                st.write('Visit again')
+        else:
+            st.write('Thanks for your visit')
 
 elif len(x)==0:
     st.write('')
