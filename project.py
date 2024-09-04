@@ -8,7 +8,7 @@ if len(x)==4:
     st.write('Login Successful')
     n+=1
     if n==2:
-        st.radio("Do you want to take Loan?",['Yes','No'])
+        st.radio("Are you self-employed or salaried employed?",['self-employed','salaried employed'])
         a=st.number_input('Enter the loan amount: ')
         t=st.number_input('Enter the time period: ')
         st.write('INTEREST RATE: 6% p.a')
@@ -24,10 +24,14 @@ if len(x)==4:
             st.balloons()
             z+=1
             if z==2:
-                st.write('Pay EMI on time 😡')
-                st.write('Thanks for your visit')
-        else:
-            st.write('Thanks for your visit')
+                st.write('Here are the documents you need to deposit: ')
+                list = ['Aadhar-card', 'Pan-Card', 'Salary-slip','Bank aaount details']
+                s = ''
+                for i in list:
+                    s += "- " + i + "\n"
+                    st.markdown(s)
+                    st.write('Pay EMI on time 😡')
+                    st.write('Thanks for your visit')
 
 elif len(x)==0:
     st.write('')
