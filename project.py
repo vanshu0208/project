@@ -1,6 +1,6 @@
 import streamlit as st
-st.header('Welcome to the ABC Bank')
-st.title('Loan Calculator')
+st.title('Welcome to the ABC Bank')
+st.header('Loan Calculator')
 st.text_input('Enter your name: ')
 x=st.text_input('Enter your 4-digit pin: ')
 if len(x)==4:
