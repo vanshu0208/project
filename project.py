@@ -1,5 +1,6 @@
 import streamlit as st
-st.write('Welcome to the ABC Bank')
+st.header('Welcome to the ABC Bank')
+st.title('Loan Calculator')
 st.text_input('Enter your name: ')
 x=st.text_input('Enter your 4-digit pin: ')
 if len(x)==4:
@@ -20,4 +21,6 @@ if c==1:
     st.write('Total amount to be paid after given time is : ',SI_final)
     st.write('Total yearly Interest is : ',SI)
     st.write('Total monthly EMI is : ', m)
-
+    st.balloons()
+st.write('Pay EMI on time 😡')
+st.write('Thanks for your visit')
