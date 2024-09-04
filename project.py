@@ -14,7 +14,7 @@ a=st.number_input('Enter the loan amount: ')
 t=st.number_input('Enter the time period: ')
 st.write('INTEREST RATE: 6% p.a')
 c=st.button('Calculate')
-a=1
+z=1
 if c==1:
     SI=(a*6*t)/100
     SI_final=a+SI
@@ -23,7 +23,7 @@ if c==1:
     st.write('Total yearly Interest is : ',SI)
     st.write('Total monthly EMI is : ', m)
     st.balloons()
-    a+=1
-if a==2:
+    z+=1
+if z==2:
     st.write('Pay EMI on time 😡')
     st.write('Thanks for your visit')
