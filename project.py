@@ -13,7 +13,6 @@ if len(x)==4:
         t=st.number_input('Enter the time period: ')
         st.write('INTEREST RATE: 6% p.a')
         c=st.button('Calculate')
-        z=1
         if c==1:
             SI=(a*6*t)/100
             SI_final=a+SI
@@ -22,9 +21,7 @@ if len(x)==4:
             st.write('Total yearly Interest is : ',SI)
             st.write('Total monthly EMI is : ', m)
             st.balloons()
-            z+=1
-            if z==2:
-                d=st.button('Show documents')
+            d=st.button('Show documents')
                 if d==1:
                     st.header('**Here are the documents you need to deposit**: ')
                     st.write('Aadhar Card\n Pan Card\n Bank Account details\n Salary slip')
