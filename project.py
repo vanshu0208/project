@@ -7,19 +7,22 @@ n=1
 if len(x)==4:
     st.write('Login Successful')
     n+=1
-elif len(x)==0:
-    st.write('')
-else:
-    st.write('Re-enter')
-if n==2:
+    if n==2:
     st.radio("Do you want to take Loan?",['Yes','No'])
     a=st.number_input('Enter the loan amount: ')
     t=st.number_input('Enter the time period: ')
     st.write('INTEREST RATE: 6% p.a')
     c=st.button('Calculate')
     z=1
-else:
+    else:
     st.write('Visit again')
+
+elif len(x)==0:
+    st.write('')
+else:
+    st.write('Re-enter')
+
+
 if c==1:
     SI=(a*6*t)/100
     SI_final=a+SI
