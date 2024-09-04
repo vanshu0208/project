@@ -26,12 +26,9 @@ if len(x)==4:
             if z==2:
                 st.write('Here are the documents you need to deposit: ')
                 list = ['Aadhar-card', 'Pan-Card', 'Salary-slip','Bank aaount details']
-                s = ''
-                for i in list:
-                    s += "- " + i + "\n"
-                    st.markdown(s)
-                    st.write('Pay EMI on time 😡')
-                    st.write('Thanks for your visit')
+                st.markdown(list)
+                st.write('Pay EMI on time 😡')
+                st.write('Thanks for your visit')
 
 elif len(x)==0:
     st.write('')
