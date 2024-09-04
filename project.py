@@ -8,7 +8,7 @@ if len(x)==4:
     st.write('Login Successful')
     n+=1
     if n==2:
-        st.radio("Are you self-employed or salaried employed?",['self-employed','salaried employed'])
+        st.radio("Are you self-employed or salaried employed?",options=['self-employed','salaried employed'])
         a=st.number_input('Enter the loan amount: ')
         t=st.number_input('Enter the time period: ')
         st.write('INTEREST RATE: 6% p.a')
@@ -27,7 +27,7 @@ if len(x)==4:
                 d=st.button('Show documents')
                 if d==1;
                     st.header('**Here are the documents you need to deposit**: ')
-                    st.markdown("Here's a list of documents: ")
+                    st.write('Aadhar Card\n Pan Card\n Bank Account details\n Salary slip')
                     st.write('Pay EMI on time 😡')
                     st.write('red[Thanks for your visit]')
 
