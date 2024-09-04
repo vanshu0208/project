@@ -22,12 +22,16 @@ if len(x)==4:
             st.write('Total monthly EMI is : ', m)
             st.balloons()
             d=st.button('Show documents')
-            d=1
-            if d==1:
-                st.write('**Here are the documents you need to deposit**: ')
-                st.write('Aadhar Card\n Pan Card\n Bank Account details\n Salary slip')
-                st.write('Pay EMI on time 😡')
-                st.write('red[Thanks for your visit]')
+            
+        if d==1:
+            st.write('**Here are the documents you need to deposit**: ')
+            st.write('Aadhar Card')
+            st.write(' Pan Card')
+            st.write('Bank Account details')
+            st.write('Salary slip')
+            st.write('')
+            st.write('Pay EMI on time 😡')
+            st.write('Thanks for your visit')
 
 elif len(x)==0:
     st.write('')
